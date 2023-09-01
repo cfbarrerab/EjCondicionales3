@@ -1,0 +1,19 @@
+<script>
+    var bisonobis;
+    
+    function bisis(year){
+        var div100 = year % 100 == 0;
+        var div400 = year % 400 == 0;
+        if (year % 4 == 0) {
+            if (!div100 || div400){
+                bisonobis = "ES BISIESTO";
+            }
+        } else {
+            bisonobis = "NO ES BISIESTO";
+        }
+
+        return bisonobis;
+    }
+
+    console.log(bisis(2000));
+</script>
